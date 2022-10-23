@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img src="./img/301724798_511760907620366_3915101710676013007_n.jpg" alt="hình ảnh">
+    <div class="container">
+        <div><h2>Đăng nhập</h2></div>
+        <div class="box">
+            <label for="">Email</label><br>
+            <input id="Email" type="email" placeholder="email"><br>
+            <span class="errorEmail" id="errorEmail" style="display: none;">Tài khoản đăng nhập không đúng</span>
+            
+            <label for="">Mật khẩu</label><br>
+            <i id="icon" onclick="showPassword()" class="fa-solid fa-eye"></i>
+            <input id="password" type="password" placeholder="Password">
+            <span class="error" id="errorPassword" style="display: none;">Mật khẩu không chính xác</span>
+            <span id="error" style = "display: none;">Tài khoản không tồn tại</span>
+            <div class="confirm"><a href="">Quên mật khẩu?</a></div>
+        </div>
+        <div class="buton" onclick="checkUserNamePass()"><button>Đăng nhập</button></div>
+        <div class="contair">bạn chưa có tài khoản? <a href="./index-register.html">Đăng ký</a></div>        
+    </div>
+    <script src="./app-login.js"></script>
+</body>
+</html>

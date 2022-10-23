@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-tragchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="box-container">
+        <div class="container">
+            <div class="logo-page">
+                <div class="logo-1">
+                    <p>
+                    <h1>105</h1>
+                    </p>
+                    <p>
+                    <h2>Interion</h2>
+                    </p>
+                </div>
+                <div class="log-2">
+                    <h1>Design </h1>
+                </div>
+            </div>
+            <div class="logo-page-tab1">
+                <div class="box-tabs1">
+                    <h3><a href="">Trang chủ</a></h3>
+                </div>
+                <div class="box-tabs2">
+                    <h3><a href="">Thông tin</a></h3>
+                </div>
+                <div class="box-tabs3">
+                    <h3><a href="./index-tranghotro.html">Hỗ trợ</a></h3>
+                </div>
+            </div>
+            <div class="logo-page-tab2">
+                <div class="header">
+                    <!-- <i id="logout" onclick="boollogout()" class="fa-solid fa-user"></i> -->
+                    <i class="fa-solid fa-user"></i>
+                    <span class="user" id="user"></span>
+                </div>
+            </div>
+        </div>
+        <div class="from-input">
+            <div class="icon"><a href="./index-login.html"><i class="fa-solid fa-right-to-bracket"></i></a></div>
+            <div class="box-ip">
+                <input type="text" placeholder="tìm kiếm sản phẩm" id="search" oninput="search()">
+                <div class="ip-icon"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                <div class="ip-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="tab-img-background">
+        <div class="hi-tab-page">
+            <div class="text-tap">
+                <h2>Chào mừng bạn đến với cửa hàng của chúng tôi <br> chúc bạn có một chuyến thăm quan đầy thú vị tại
+                    đây ! </h2>
+            </div>
+        </div>
+        <div class="tab-imge2">
+            <div class="imges">
+                <img src="../img/259457347_1226291547872437_6859958664986667800_n.jpg" alt="hình ảnh">
+            </div>
+        </div>
+    </div>
+    <div class="class-goods">Gian Hàng 105 Design</div>
+    <div class="show-card" id="showCart">
+        <div class="item1">
+            <div class="card-imge">
+                <img src=${data[i].image} alt="hình ảnh">
+            </div>
+            <div>
+                <h3>${data[i].title}</h3>
+            </div>
+            <div class="card-display">
+                <div class="card-icon"><i class="fa-regular fa-heart"></i></div>
+                <div class="card-price">${data[i].price}</div>
+            </div>
+            <div class="card-onclick">
+                <div class="click-box1">Thêm vào giỏ hàng</div>
+                <div class="click-box2">Xem chi tiết</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="background-footer">
+            <div class="card-footer1">
+                <div>
+                    <h2>Thông tin về chúng tôi</h2>
+                </div>
+                <div class="crd">
+                    <div class="crd-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="crd-conten">Địa chỉ: Hà nội, Việt Nam</div>
+                </div>
+                <div class="crd">
+                    <div class="crd-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="crd-conten">Điện thoại: +(84) 1234 567</div>
+                </div>
+                <div class="crd">
+                    <div class="crd-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="crd-conten">E-mail: 105design@gmail.com</div>
+                </div>
+                <div class="crd">
+                    <div class="crd-icon"><i class="fa-solid fa-globe"></i></div>
+                    <div class="crd-conten">http://150.design.vn/</div>
+                </div>
+            </div>
+            <div class="card-footer2">
+                <div>
+                    <h2>Cảm ơn bạn đã ghé thăm</h2>
+                </div>
+                <div class="crd-conten">Giới thiệu</div>
+                <div class="crd-conten">105 DESIGN</div>
+                <div class="crd-conten">ANNAM Furniture</div>
+            </div>
+            <div class="card-footer3">
+                <div>
+                    <h2>FOLLOW US</h2>
+                </div>
+                <div class="link-icon"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="link-icon"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="link-icon"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="link-icon"><a href=""><i class="fa-brands fa-github"></i></a></div>
+            </div>
+
+        </div>
+        <div class="card-footer4">Quyền riêng tư · Điều khoản · Quảng cáo · Lựa chọn quảng cáo · Cookie · · Meta © 2022
+        </div>
+    </div>
+    <script src="trangchu.js"></script>
+</body>
+
+</html>
+
+<img src="./img/tủ để sách.jpg" alt="">

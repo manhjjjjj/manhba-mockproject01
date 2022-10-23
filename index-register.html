@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style-register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <img src="./img/301724798_511760907620366_3915101710676013007_n.jpg" alt="hình ảnh">
+    <div class="container">
+        <div>
+            <h2>Đăng ký</h2>
+        </div>
+        <div class="box">
+            <label for="">Tên đăng nhập</label><br>
+            <input id="username" type="text" placeholder="Username"><br>
+            <span class="errorUsername" id="errorUsername" style="display: none">Tên tài khoản không hợp lệ</span><br>
+
+            <label for="">Email</label><br>
+            <input id="email" type="text" placeholder="email"><br>
+            <span id="emailExits" style="display: none;">Trùng Email</span>
+            <span class="errorEmail" id="errorEmail" style="display: none">Email không hợp lệ</span><br>
+
+            <label for="">Mật khẩu</label><br>
+            <i id="icon" onclick="seePassword()" class="fa-solid fa-eye"></i>
+            <input id="password" type="password" placeholder="password"><br>
+            <span class="error" id="error" style="display: none">Mật khẩu không hợp lệ</span> <br>
+
+            <label for="">Nhập lại mật khẩu</label><br>
+            <i id="icon1" onclick="seeConfirmPassword()" class="fa-solid fa-eye"></i>
+            <input id="passwordconfirm" type="password" placeholder="confirm password"><br>
+            <span class="confirmError" id="confirmError" style="display: none">Mật khẩu nhập lại không đúng</span>
+        </div>
+        <div class="buton" id="botton"><button onclick="register()">Đăng kí</button></div>
+        <div class="login">bạn đã có tài khoản?<a href="./index-login.html">Đăng nhập</a></div>
+    </div>
+    
+    <script src="./app-register.js"></script>
+</body>
+
+</html>
